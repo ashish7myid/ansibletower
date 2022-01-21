@@ -1,0 +1,8 @@
+---
+- name: Copy content from Master to Node1 through Git Ansible Tower
+  hosts: node1
+  tasks:
+  - name: Copy Content
+    copy:
+      content: "Hello Github!!!"
+      dest: "/tmp/git"
